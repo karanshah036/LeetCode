@@ -1,6 +1,6 @@
 // Recursive Approach
 // Time complexity O(n)
-// Space complexity O(n)
+// Space complexity O(h)
 class Solution {
 	List<Integer> list = new ArrayList<>();
     public List<Integer> preorderTraversal(TreeNode root) {
@@ -16,7 +16,7 @@ class Solution {
 
 // Iterative Approach 
 // Time complexity O(n)
-// Space complexity O(n)
+// Space complexity O(h)
 class Solution {
 
     public List<Integer> preorderTraversal(TreeNode root) {
