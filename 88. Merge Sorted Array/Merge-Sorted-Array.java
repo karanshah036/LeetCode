@@ -1,3 +1,5 @@
+// Time complexity O(m)
+// Space complexity O(1)
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int pointer=nums1.length-1;
