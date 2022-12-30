@@ -1,3 +1,5 @@
+// Time complexity O(n)
+// Space complexity O(1)
 class Solution {
     public int removeElement(int[] nums, int val) {
         int pointer=0;
