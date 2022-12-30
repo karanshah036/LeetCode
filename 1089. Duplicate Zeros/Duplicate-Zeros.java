@@ -1,3 +1,5 @@
+// Time Complexity O(n)
+// Space Compexity O(1)
 class Solution {
     public void duplicateZeros(int[] arr) {
         int zeros=0,pointer=arr.length-1;
