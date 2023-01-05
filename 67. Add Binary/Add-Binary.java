@@ -1,3 +1,5 @@
+// Time Complexity O(n)
+// Space Complexity O(n)
 class Solution {
     public String addBinary(String a, String b) {
         int pointer1=a.length()-1,pointer2=b.length()-1,carry=0;
