@@ -1,5 +1,5 @@
-Time Complexity O(n log n)
-Space Complexity O(n)
+// Time Complexity O(n log n)
+// Space Complexity O(n)
 class Solution {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals,(a,b)->a[0]-b[0]);
