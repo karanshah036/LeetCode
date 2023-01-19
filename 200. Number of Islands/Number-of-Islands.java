@@ -70,3 +70,39 @@ class Solution {
         return numIslands;
     }
 }
+
+// BFS approach 2
+class Solution {
+    public int numIslands(char[][] grid) {
+        if(grid.length==0 || grid==null) return 0;
+        int nr=grid.length;
+        int nc=grid[0].length;
+        int numIslands=0;
+        final int[][] DIRECTIONS = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
+        for(int i=0;i<nr;i++){
+            for(int j=0;j<nc;j++){
+                if(grid[i][j]=='1'){
+                    numIslands++;
+                    grid[i][j]='0';
+                    Queue<Integer> queue = new LinkedList<>();
+                    int position = i*nc+j;
+                    queue.add(position);
+                    while(!queue.isEmpty()){
+                        int startinPoint = queue.poll();
+                        int row = startinPoint/nc;
+                        int col = startinPoint%nc;
+                        for(int[] direction:DIRECTIONS){
+                            int x=direction[0]+row;
+                            int y=direction[1]+col;
+                            if(x>=0 && x<nr && y>=0 && y<nc && grid[x][y]=='1'){
+                                grid[x][y]='0';
+                                queue.add(x*nc+y);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return numIslands;
+    }
+}
