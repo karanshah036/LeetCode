@@ -1,5 +1,5 @@
 // Time Complexity O(n+m)
-// Space Complexity (n+m)
+// Space Complexity O(n+m)
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> set1 = new HashSet<>();
