@@ -1,5 +1,5 @@
-Time Complexity O(s,t)
-Space Complexity O(1)
+// Time Complexity O(s,t)
+// Space Complexity O(1)
 class Solution {
     public boolean isAnagram(String s, String t) {
         int[] charMap = new int[26];
